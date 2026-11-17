@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Câu 1a -->
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sự kiện sắp diễn ra – EduHub Web</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">EduHub Web</a>
+    <nav aria-label="Menu chính">
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="index.html">Sự kiện</a></li>
+        <li><a href="register.html">Đăng ký</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Sự kiện sắp diễn ra</h1>
+
+    <form id="search-form" class="search-form">
+      <label for="keyword" class="visually-hidden">Tìm sự kiện</label>
+      <input type="search" id="keyword" name="q" placeholder="Tìm sự kiện...">
+      <button type="submit">Tìm</button>
+    </form>
+
+    <p id="status" role="status" aria-live="polite"></p>
+
+    <div id="event-list" class="event-list">
+      <article class="card">
+        <img class="card-img" src="img/event.svg" alt="Ảnh minh hoạ sự kiện" width="320" height="180">
+        <h2 class="card-title">
+          <a href="event-detail.html?id=22222222-2222-4222-8222-000000000001">Workshop Git &amp; GitHub cho tân sinh viên</a>
+        </h2>
+        <p class="card-time">
+          <time datetime="2026-09-12T01:00:00.000Z">08:00 12/09/2026</time>
+        </p>
+        <p class="card-location">Phòng máy A3.201</p>
+        <p class="card-seats">Còn 12/40 chỗ</p>
+      </article>
+
+      <article class="card">
+        <img class="card-img" src="img/event.svg" alt="Ảnh minh hoạ sự kiện" width="320" height="180">
+        <h2 class="card-title">
+          <a href="event-detail.html?id=22222222-2222-4222-8222-000000000004">Hackathon EduHub 24 giờ</a>
+        </h2>
+        <p class="card-time">
+          <time datetime="2026-12-19T01:00:00.000Z">08:00 19/12/2026</time>
+        </p>
+        <p class="card-location">Phòng máy A3.205</p>
+        <p class="card-seats"><span class="badge">Hết chỗ</span></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 EduHub Web</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
